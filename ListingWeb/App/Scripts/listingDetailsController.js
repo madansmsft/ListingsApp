@@ -13,7 +13,7 @@ angular.module('todoApp')
 
         $scope.populate = function () {
             listingsService.getListing($scope.listingId).success(function (results) {
-                $scope.listing = results;
+                $scope.listing = results[0];
                 $scope.loadingMessage = "";
             }).error(function (err) {
                 $scope.error = err;

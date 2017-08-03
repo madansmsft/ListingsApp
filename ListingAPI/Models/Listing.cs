@@ -31,6 +31,15 @@ namespace ListingAPI.Models
         public Dictionary<string, string> Images { get;  set; }
 
         [JsonProperty]
+        public List<string> ImageList
+        {
+            get
+            {
+                return Images?.Keys.ToList();
+            }
+        }
+
+        [JsonProperty]
         public List<string> Keywords
         {
             get

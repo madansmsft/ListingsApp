@@ -4,18 +4,24 @@
     <div>
         <table class="table table-striped">
             <tbody>
-                <tr data-ng-repeat="item in listing">
+                <tr>
                     <td>
-                        <p>{{item.id}}</p>
+                        <p>{{listing.id}}</p>
                     </td>
 
                     <td>
-                        <p>{{item.Address}}</p>
+                        <p>{{listing.Address}}</p>
                     </td>
                     <td>
-                        <p>{{item.Description}}</p>
+                        <p>{{listing.Description}}</p>
                     </td>
+                    <td>
                 </tr>
+                    <tr data-ng-repeat="image in listing.ImageList">
+                        <td>
+                            <image ng-src="https://listingimages.blob.core.windows.net/thumbs/{{image}}" item-width="100" item-height="200"/>
+                        </td>
+                    </tr>
             </tbody>
         </table>
     </div>

@@ -1,0 +1,19 @@
+﻿<div ng-init="populate()">
+    <p class="error">{{error}}</p>
+    <p>{{loadingMessage}}</p>
+    <div class="panel">
+        <table class="table table-striped">
+            <tbody>
+                <tr data-ng-repeat="item in listings">
+                    <td>
+                        <a ng-href="#/listing/{{item.Id}}">{{item.Id}}</a>
+                    </td>
+
+                    <td>
+                        <p>{{item.Address}}</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

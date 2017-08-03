@@ -1,0 +1,22 @@
+﻿<div ng-init="populate()">
+    <p class="error">{{error}}</p>
+    <p>{{loadingMessage}}</p>
+    <div>
+        <table class="table table-striped">
+            <tbody>
+                <tr data-ng-repeat="item in listing">
+                    <td>
+                        <p>{{item.id}}</p>
+                    </td>
+
+                    <td>
+                        <p>{{item.Address}}</p>
+                    </td>
+                    <td>
+                        <p>{{item.Description}}</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

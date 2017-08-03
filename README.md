@@ -7,7 +7,7 @@ A sample application that has the following components
 - Azure AD 
 - Azure CDN
 
-This application is a sample Real Estate Listings app, that shows how to secure the an AngularJS application using Azure AD. It connects to the WebAPI also secured using Azure AD.
+This application is a sample Real Estate Listings app, that shows how to secure an AngularJS application using Azure AD. It connects to the WebAPI also secured using Azure AD.
 
 The WebApi makes calls to CosmosDB to pull property listings. The property images are stored in blob storage and are made available using Azure CDN
 
